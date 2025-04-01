@@ -1,6 +1,10 @@
-import React from "react";
+// Hero.js
+import { useState } from "react";
+import Modal from "./Modal";
 
 const Hero = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <header className="w-full flex justify-center items-center flex-col">
       <nav className="flex justify-between items-center w-full mb-10 pt-3 gap-6">
@@ -10,13 +14,15 @@ const Hero = () => {
             AI Summarizer
           </p>
         </div>
-        <div>
+        <div className="relative flex flex-col gap-4">
           <button
             type="button"
-            className="rounded-xl bg-fuchsia-200 px-4 py-2 text-sm hover:bg-fuchsia-300"
+            className="w-fit rounded-xl bg-fuchsia-200 px-4 py-2 text-sm hover:bg-fuchsia-300 shadow-gray-300 shadow-md"
+            onClick={() => setModalOpen(true)}
           >
-            Sign In
+            Buy me a coffee ☺️
           </button>
+          <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
         </div>
       </nav>
       <div>

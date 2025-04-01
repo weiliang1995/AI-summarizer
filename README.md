@@ -4,7 +4,7 @@
 
 Tired of reading long articles? Simplify your reading with AI Summarizer, an open-source article summarizer that transform lengthy articles into clear and concise summaries.
 
-Try it at : [link]
+Try it at : [\[link\]](https://ai-summarizer-92rb.onrender.com/)
 
 ### Tech Stack
 
@@ -17,6 +17,10 @@ Summary Generation
 History Saving with Local Storage
 Copy URL to clipboard Functionality
 Advanced RTK Query API Requests
+
+### More Features coming soon
+
+OAuth Sign in
 
 ### Wanna try it locally?
 
@@ -32,7 +36,7 @@ Make sure you have the following installed on your machines:
 **Cloning the repository**
 
 ```bash
-git clone
+git clone https://github.com/weiliang1995/AI-summarizer.git
 cd ai-summarizer
 ```
 
